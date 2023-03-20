@@ -8,13 +8,13 @@ namespace GenericsProblems
 {
     public class MaximumGeneric
     {
-        public void Integer<M>(M a, M b, M c) where M : IComparable
+       public void FindMaxInt(int a, int b, int c)
         {
-            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+            if (a > b && a > c)
                 Console.WriteLine("a is Maximum");
-            if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+            if (b > a && b > c)
                 Console.WriteLine("b is Maximum");
-            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+            if (c > a && c > b)
                 Console.WriteLine("c is Maximum");
         }
     }

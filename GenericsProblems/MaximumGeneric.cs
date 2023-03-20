@@ -25,6 +25,15 @@ namespace GenericsProblems
                 Console.WriteLine("b is Maximum");
             if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
                 Console.WriteLine("c is Maximum");
+        }       
+        public void String<T>(T a, T b, T c ) where T : IComparable
+        {
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+                Console.WriteLine("a is Maximum");
+            if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+                Console.WriteLine("b is Maximum");
+            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+                Console.WriteLine("c is Maximum");
         }
     }
 }

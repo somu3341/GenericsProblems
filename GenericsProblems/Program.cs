@@ -8,7 +8,7 @@ namespace GenericsProblems
         static void Main(string[] args)
         {
             MaximumGeneric maximumGeneric = new MaximumGeneric();
-            maximumGeneric.Print<int>(1,29,6);
+            maximumGeneric.Integer<int>(1,29,6);
         }
     }
 }

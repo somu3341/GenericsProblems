@@ -12,7 +12,9 @@ namespace GenericsProblems
             MaximumGeneric maximum = new MaximumGeneric();
             maximum.FindMaxInt(12, 82, 5);
             maximum.FindMaxFloat(15, 2, 23);
-        }                  
+            maximum.FindMaxString("Apple", "Peach", "Banana");
+
+        }
     }
 
 }

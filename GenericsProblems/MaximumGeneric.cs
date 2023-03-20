@@ -26,6 +26,15 @@ namespace GenericsProblems
             if (c > a && c > b)
                 Console.WriteLine("c is Maximum");
         }
+        public void FindMaxString(string a, string b, string c)
+        {
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+                Console.WriteLine("a is Maximum");
+            if (b.CompareTo(a) > 0 && b.CompareTo(a) > 0)
+                Console.WriteLine("b is Maximum");
+            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+                Console.WriteLine("c is Maximum");
+        }
     }
         
 }

@@ -9,6 +9,7 @@ namespace GenericsProblems
         {
             MaximumGeneric maximumGeneric = new MaximumGeneric();
             maximumGeneric.Integer<int>(1,29,6);
+            maximumGeneric.Float<float>(29,2,5);
         }
     }
 }

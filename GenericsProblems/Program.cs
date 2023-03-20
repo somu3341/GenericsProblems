@@ -10,9 +10,9 @@ namespace GenericsProblems
         static void Main(string[] args)
         {
             MaximumGeneric maximum = new MaximumGeneric();
-            maximum.FindMaxInt(12, 82, 5);
-            maximum.FindMaxFloat(15, 2, 23);
-            maximum.FindMaxString("Apple", "Peach", "Banana");
+            maximum.FindMax<int>(12, 82, 5);
+            maximum.FindMax<float>(15, 2, 23);
+            maximum.FindMax<string>("Apple", "Peach", "Banana");
 
         }
     }

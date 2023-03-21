@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace GenericsProblems
 {
-    public class MaximumGeneric
+    public class MaximumGeneric<M> where M : IComparable
     {
-
-        public void FindMax<M>(M a, M b, M c) where M : IComparable
+        public M a, b, c;
+        public MaximumGeneric(M a, M b, M c)
         {
-            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+
+        public void FindMax() 
+        {
+            if (this.a.CompareTo(this.b) > 0 && this.a.CompareTo(this.c) > 0)
                 Console.WriteLine("a is Maximum");
-            if (b.CompareTo(a) > 0 && b.CompareTo(a) > 0)
+            if (this.b.CompareTo(this.a) > 0 && this.b.CompareTo(this.a) > 0)
                 Console.WriteLine("b is Maximum");
-            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+            if (this.c.CompareTo(this.a) > 0 && this.c.CompareTo(this.b) > 0)
                 Console.WriteLine("c is Maximum");
         }
     }

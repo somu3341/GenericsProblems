@@ -16,7 +16,7 @@ namespace GenericsProblems
             this.c = c;
         }
 
-        public void FindMax() 
+        public void FindMaxNum() 
         {
             if (this.a.CompareTo(this.b) > 0 && this.a.CompareTo(this.c) > 0)
                 Console.WriteLine("a is Maximum");
